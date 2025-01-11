@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Asteroid" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Asteroid" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Asteroid" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="C:/opencv/build/mingw/install/include" />
+					<Add directory="C:/opencv/build/mingw/install/include/opencv4" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libopencv_core4100.dll" />
+					<Add library="libopencv_imgproc4100.dll" />
+					<Add library="libopencv_highgui4100.dll" />
+					<Add library="libopencv_imgcodecs4100.dll" />
+					<Add library="libopencv_videoio4100.dll" />
+					<Add directory="C:/opencv/build/mingw/install/x64/mingw/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="CAsteroidBelt.cpp" />
+		<Unit filename="CAsteroidBelt.h" />
+		<Unit filename="asteroid.cpp" />
+		<Unit filename="asteroid.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
